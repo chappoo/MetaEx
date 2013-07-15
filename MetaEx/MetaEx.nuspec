@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MetaEx</id>
+    <version>$version$</version>
+    <title>MetaEx</title>
+    <authors>Steve Chapman</authors>
+    <owners>Steve Chapman</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MetaEx-tensions. Provides extensions for providing metadata off arbitrary POCO objects. Based heavily on the @ServiceStack UserAuth Meta implementation (uses ServiceStack.Text).</description>
+    <copyright>Steve Chapman</copyright>
+    <licenseUrl>https://github.com/chappoo/MetaEx</licenseUrl>
+    <projectUrl>https://github.com/chappoo/MetaEx</projectUrl>
+    <tags>MetaEx</tags>
+    <dependencies>
+      <dependency id="ServiceStack.Text" version="3.9.55" />
+    </dependencies>
+  </metadata>
+</package>
