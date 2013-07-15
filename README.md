@@ -1,17 +1,19 @@
 MetaEx
 ======
 
-MetaEx-tensions.   Provides extensions for providing metadata off arbitrary POCO objects.  Based heavily on the @ServiceStack UserAuth Meta implementation (uses ServiceStack.Text).
+MetaEx-tensions.   Provides extensions for managing metadata on arbitrary POCO objects.  Based heavily on the @ServiceStack UserAuth Meta implementation (uses ServiceStack.Text).
 
 ###What for?###
 
-I found myself working with an ORM (no names mentioned) and wanting to extend a table type object with various parameters.  Rather than keep writing database migration scripts and resyncing the (unmentioned) model every time we needed a new parameter, I opted to create a string field in the database and manage a `Dictionary<string,string>` approach with serialization, much like the simple implementation in @ServiceStack **UserAuth.Meta**.
+I found myself working with an ORM (no names mentioned) and wanting to extend a table type with various parameters.  Rather than repeatedly writing database migration scripts and resyncing the (unmentioned) model every time a new parameter was required, I opted to create a string field in the database and manage a `Dictionary<string,string>` approach with serialization, much like the simple implementation in @ServiceStack **UserAuth.Meta**.
+
+This implementation provides a really simple approach for such use-cases.
 
 Kudos to the guys at @ServiceStack for the core tech.
 
 ###Usage###
 
-`IMeta` interface requires the Meta string field on the POCO.
+`IMeta` interface requires the Meta string field on the POCO.  This field is then used with whatever persistence model you wish.
 
     public class TestObjectWithMetaData : IMeta
     {
