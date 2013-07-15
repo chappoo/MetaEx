@@ -7,7 +7,7 @@
     <authors>Steve Chapman</authors>
     <owners>Steve Chapman</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>MetaEx-tensions. Provides extensions for providing metadata off arbitrary POCO objects. Based heavily on the @ServiceStack UserAuth Meta implementation (uses ServiceStack.Text).</description>
+    <description>MetaEx-tensions. Provides extensions for managing metadata on arbitrary POCO objects. Based heavily on the @ServiceStack UserAuth Meta implementation (uses ServiceStack.Text).</description>
     <copyright>Steve Chapman</copyright>
     <licenseUrl>https://github.com/chappoo/MetaEx</licenseUrl>
     <projectUrl>https://github.com/chappoo/MetaEx</projectUrl>
